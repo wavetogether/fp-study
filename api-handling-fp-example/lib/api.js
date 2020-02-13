@@ -1,4 +1,4 @@
-export const getUrl = (type, param = {}) => {
+const getUrl = (type, param = {}) => {
   switch (type) {
     case urlTypes.GET_ALL_EMPLOYEE: return "http://dummy.restapiexample.com/api/v1/employees";
     case urlTypes.CREATE_A_EMPLOYEE: return "http://dummy.restapiexample.com/api/v1/create"
@@ -6,7 +6,11 @@ export const getUrl = (type, param = {}) => {
   }
 }
 
-export const urlTypes = {
+const urlTypes = {
   GET_ALL_EMPLOYEE: "GET_ALL_EMPLOYEE",
   CREATE_A_EMPLOYEE: "CREATE_A_EMPLOYEE"
+}
+
+module.exports = {
+  getUrl, urlTypes
 }
