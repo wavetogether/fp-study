@@ -1,6 +1,8 @@
-import * as R from 'ramda';
-import S from 'sanctuary';
-import {getUrl, urlTypes} from './lib/api';
+const R = require('ramda');
+const S = require('sanctuary');
+const fetch = require('node-fetch');
+const {getUrl, urlTypes} = require('./lib/api');
+
 
 /**
  * Make Function handleFetch
